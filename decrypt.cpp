@@ -35,14 +35,3 @@ std::string decryptVigenere(std::string ciphertext, std::string keyword){
     }
     return plain1;
 }
-
-int main(){
-    std::cout<<decryptCaesar("Bfd yt Lt!", 5)<<"\n";
-    std::cout<<decryptCaesar("K", 10)<<"\n";
-    std::cout<<encryptCaesar("Wow what. A", 10)<<"\n";
-    std::cout<<decryptCaesar("Gyg grkd. K", 10)<<"\n";
-    std::cout<<encryptVigenere("Hello, World!", "cake")<<"\n";
-    std::cout<<decryptVigenere("Jevpq, Wyvnd!", "cake")<<"\n";
-    //std::cout<<decryptVigenere("", std::string keyword)<<"\n";
-    
-}
