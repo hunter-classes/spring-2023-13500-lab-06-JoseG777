@@ -3,9 +3,6 @@
 
 #include "funcs.h"
 
-int main()
-{
-  ascii("WOW WHAT A STring");
-  
+int main(){
   return 0;
 }
