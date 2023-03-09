@@ -1,12 +1,6 @@
 #include <iostream>
-#include "funcs.h"
+#include <string>
 
-// add functions here
-void ascii(std::string text){
-    for(int i = 0; i < text.length(); i++){
-        std::cout<<text[i]<<"\t"<<(int)text[i]<<"\n";
-    }
-}
 
 char shiftChar(char c, int rshift){
     int hold;
@@ -46,24 +40,6 @@ std::string encryptCaesar(std::string plaintext, int rshift){
     return caeser;
 }
 
-std::string encryptVigenere(std::string plaintext, std::string keyword){
-    std::string encrypted;
-    int j = 0;
-    for(int i = 0; i < plaintext.length(); i++){
-        if(j > keyword.length() - 1){
-            j = 0;
-        }
-        if((96 < int(plaintext[i]) and int(plaintext[i]) < 123) or (64 < int(plaintext[i]) and int(plaintext[i]) < 91)){
-            encrypted += shiftChar(plaintext[i], int(keyword[j]) - 97);
-            j = j + 1;
-        }
-        else{
-            encrypted += plaintext[i];
-        }
-    }
-    return encrypted;
+int main(){
+    std::cout<<encryptCaesar("Word", 5)<<"\n";
 }
-
-
-
-
