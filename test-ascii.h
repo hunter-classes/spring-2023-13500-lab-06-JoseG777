@@ -2,4 +2,4 @@
 #include <iostream>
 #include <string>
 
-// add prototypes here
+void ascii(std::string text);
