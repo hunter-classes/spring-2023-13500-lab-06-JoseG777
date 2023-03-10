@@ -4,6 +4,9 @@
 #include "caeser.h"
 #include "vigenere.h"
 #include "decrypt.h"
+#include <iostream>
+#include <string>
+#include <cctype>
 
 // add your tests here
 TEST_CASE("TESTS"){
