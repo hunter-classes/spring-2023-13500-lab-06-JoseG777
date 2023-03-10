@@ -4,7 +4,7 @@
 #include "funcs.h"
 #include "decrypt.h"
 #include "vigenere.h"
-#include "caeser.h"
+#include "caesar.h"
 #include "test-ascii.h"
 
 int main(){

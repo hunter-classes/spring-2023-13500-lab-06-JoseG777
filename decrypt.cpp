@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include "caeser.h"
+#include "caesar.h"
 #include "vigenere.h"
 
 std::string decryptCaesar(std::string ciphertext, int rshift){

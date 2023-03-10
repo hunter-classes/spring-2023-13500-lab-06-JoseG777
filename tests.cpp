@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 #include "funcs.h"
-#include "caeser.h"
+#include "caesar.h"
 #include "vigenere.h"
 #include "decrypt.h"
 #include <iostream>

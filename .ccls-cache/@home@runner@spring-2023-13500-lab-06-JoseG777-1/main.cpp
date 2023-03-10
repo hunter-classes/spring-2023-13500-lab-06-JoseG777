@@ -4,7 +4,7 @@
 #include "funcs.h"
 #include "decrypt.h"
 #include "vigenere.h"
-#include "caeser.h"
+#include "caesar.h"
 #include "test-ascii.h"
 
 int main(){
@@ -22,6 +22,10 @@ int main(){
 
     std::cout<<decryptVigenere("Jevpq, Wyvnd!", "cake")<<"\n";
     std::cout<<decryptVigenere("Lvwx r hsjxvcqa", "power")<<"\n";
-    
+
+    ascii("Wow what a sentence");
+    ascii("A real test");
+
+
     
 }

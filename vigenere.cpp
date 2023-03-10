@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include "caeser.h"
+#include "caesar.h"
 
 std::string encryptVigenere(std::string plaintext, std::string keyword){
     std::string encrypted;

@@ -1,9 +1,12 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 #include "funcs.h"
-#include "caeser.h"
+#include "caesar.h"
 #include "vigenere.h"
 #include "decrypt.h"
+#include <iostream>
+#include <string>
+#include <cctype>
 
 // add your tests here
 TEST_CASE("TESTS"){
