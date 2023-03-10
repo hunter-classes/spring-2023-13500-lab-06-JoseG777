@@ -1,26 +1,26 @@
-main: main.o funcs.o caesar.o vigenere.o decrypt.o
-	g++ -o main main.o funcs.o caesar.o vigenere.o decrypt.o
+main: main.o caesar.o vigenere.o decrypt.o
+	g++ -o main main.o caesar.o vigenere.o decrypt.o
 
-test-ascii: test-ascii.o
-	g++ -o test-ascii test-ascii.o
-
-tests: tests.o funcs.o caesar.o vigenere.o decrypt.o
-	g++ -o tests tests.o funcs.o caesar.o vigenere.o decrypt.o
-
-funcs.o: funcs.cpp funcs.h
-
-test-ascii.o: test-ascii.cpp 
-
-main.o: main.cpp funcs.h 
-
+tests: tests.o caesar.o vigenere.o decrypt.o
+	g++ -o tests tests.o caesar.o vigenere.o decrypt.o
+	
 caesar.o: caesar.cpp caesar.h
-
-tests.o: tests.cpp doctest.h funcs.h
-	g++ -c -std=c++11 tests.cpp
 
 vigenere.o: vigenere.cpp vigenere.h
 
 decrypt.o: decrypt.cpp decrypt.h
 
+main.o: main.cpp caesar.h vigenere.h decrypt.h
+	g++ -c -std=c++11 main.cpp
+	
+tests.o: tests.cpp doctest.h caesar.h vigenere.h decrypt.h
+	g++ -c -std=c++11 tests.cpp
+
+test-ascii: test-ascii.o 
+	g++ -o test-ascii test-ascii.o 
+
+test-ascii.o: test-ascii.cpp
+	g++ -c -std=c++11 test-ascii.cpp
+
 clean:
-	rm -f *.o main a.out
+	rm -f main.o tests.o main tests caesar.o vigenere.o test-ascii.o test-ascii decrypt.o test-ascii test-ascii.o
