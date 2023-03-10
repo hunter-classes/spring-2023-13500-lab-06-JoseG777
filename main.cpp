@@ -22,6 +22,10 @@ int main(){
 
     std::cout<<decryptVigenere("Jevpq, Wyvnd!", "cake")<<"\n";
     std::cout<<decryptVigenere("Lvwx r hsjxvcqa", "power")<<"\n";
-    
+
+    ascii("Wow what a sentence");
+    ascii("A real test");
+
+
     
 }
