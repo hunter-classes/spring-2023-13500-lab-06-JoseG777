@@ -10,7 +10,7 @@ std::string encryptVigenere(std::string plaintext, std::string keyword){
         if(j > keyword.length() - 1){
             j = 0;
         }
-        if(isalpha(plaintext[i]) == true){
+        if(isalpha(plaintext[i])){
             encrypted += shiftChar(plaintext[i], int(keyword[j]) - 97);
             j = j + 1;
         }

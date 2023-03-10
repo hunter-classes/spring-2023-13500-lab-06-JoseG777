@@ -8,7 +8,7 @@ std::string decryptCaesar(std::string ciphertext, int rshift){
     std::string plain;
     int sub = 26 - rshift;
     for(int i = 0; i < ciphertext.length(); i++){
-        if(isalpha(ciphertext[i]) == true){
+        if(isalpha(ciphertext[i])){
             plain += shiftChar(ciphertext[i],sub);
         }
         else{

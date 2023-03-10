@@ -35,7 +35,7 @@ char shiftChar(char c, int rshift){
 std::string encryptCaesar(std::string plaintext, int rshift){
     std::string caeser;
     for(int i = 0; i < plaintext.length(); i++){
-        if(isalpha(plaintext[i]) == true){
+        if(isalpha(plaintext[i])){
             caeser += shiftChar(plaintext[i], rshift);
         }
         else{
