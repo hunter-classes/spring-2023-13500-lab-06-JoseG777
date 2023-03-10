@@ -2,7 +2,6 @@
 #include <string>
 #include <cctype>
 
-
 char shiftChar(char c, int rshift){
     int hold;
     if((96 < int(c) and int(c) < 123)) 
