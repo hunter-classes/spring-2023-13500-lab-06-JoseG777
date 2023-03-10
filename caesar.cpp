@@ -17,9 +17,6 @@ char shiftChar(char c, int rshift){
         else{
             return c;
         }
-    else{
-        return c;
-    }
     if(64 < int(c) and int(c) < 91)
         if(int(c) + rshift < 91){
         hold = (int(c)) + rshift;
@@ -33,9 +30,6 @@ char shiftChar(char c, int rshift){
         else{
             return c;
           }
-    else{
-        return c;
-    }
 }
 
 std::string encryptCaesar(std::string plaintext, int rshift){
